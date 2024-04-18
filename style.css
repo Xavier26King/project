@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5190b;
+  height: 1117px;
+  /* overflow-x: hidden; */
+}
+
+.container {
+  
+  width: 100%;
+  background: linear-gradient(0, 0, 50);
+}
+
+.logo-container{
+    height: 1173px;
+}
+
+@keyframes slides {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .logos {
+    overflow: hidden;
+    height: 33.33%;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos:before, .logos:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .logos:before {
+    left: 0;
+  }
+  
+  .logos:after {
+    right: 0;
+  }
+  
+  .logo_items {
+    display: inline-block;
+    animation: 10s slides infinite linear;
+  }
+  
+  
+
+#old {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  height: 1117px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header {
+  transform: translateY(-1117px);
+}
+.cont {
+  display: flex;
+  margin-top: 200px;
+  height: 200px;
+  width: 1600px;
+}
+
+.para {
+  margin: 20px;
+}
+.para.left {
+  width: 980px;
+  height: 160px;
+}
+#para1 {
+  font-family: Outfit;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: white;
+}
+#para1 span {
+  font-family: Plus Jakarta Sans;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: yellow;
+}
+.para.right {
+  width: 545px;
+  height: 90px;
+  font-family: Inter;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: white;
+}
+
+#home-down {
+  display: flex;
+  width: 95%;
+  flex-direction: row;
+}
+#inductId {
+  width: 211.87px;
+  height: 75px;
+  margin-left: 168.92px;
+  margin-top: 95px;
+}
+
+#bars {
+  transform: translate(-100px, 100px);
+}
+
+.box {
+  display: flex;
+  height: 558px;
+  background-color: rgb(184, 6, 6);
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+.small-box1 {
+  width: 89.95px;
+  height: 130px;
+  background-color: #243a5a;
+}
+.small-box2 {
+  width: 89.95px;
+  height: 70px;
+  margin-left: auto;
+  margin-top: auto;
+  background-color: #7cc61d;
+}
+.small-box3 {
+  width: 89.95px;
+  height: 130px;
+  margin-left: auto;
+  margin-top: auto;
+  background-color: #243a5a;
+}
+.info1 {
+  width: 400px;
+  height: 330px;
+  margin-top: 320px;
+  margin-right: 100px;
+}
+.info1 btn {
+  background-color: rgb(184, 6, 6);
+}
+.main {
+  font-family: Public Sans;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 60px;
+  text-align: left;
+  color: white;
+}
+.vision {
+  font-family: Public Sans;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: left;
+  color: #0fbe21;
+}
+.fund {
+  font-family: Public Sans;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: left;
+  color: white;
+}
+.info2 {
+  width: 500px;
+  height: 230px;
+  margin-top: 150px;
+  margin-right: 100px;
+}
+.info3 {
+  width: 400px;
+  height: 230px;
+  margin-top: 350px;
+}
+.box :hover {
+  transform: translateY(-10px);
+}
+.box p a {
+  text-decoration: none;
+  color: white;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: left;
+}
+.box p i {
+  font-size: 30px;
+  color: #0fbe21;
+}
+
+#box2 {
+  background-image: url(assets/Rectangle\ 2420.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+nav .fa-solid{
+  display: block;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  left: 1750px;
+  bottom: 90px;
+}
+nav ul{
+  background: white;
+  position: fixed;
+  top: 80px;
+  right: -200px;
+  width: 250px;
+  height: 250px;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 0.5s;
+}
+nav ul li{
+  display: block;
+  margin: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul .fa-solid.fa-xmark {
+  position: absolute;
+  color: black;
+  top: 25px;
+  left: 30px;
+  cursor: pointer;
+}
+nav ul .fa-solid {
+  color: red;
+}

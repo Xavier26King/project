@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" contents="IE-edge" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Pandey</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bd185d0a0f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="logo-container">
+      <div class="logos">
+        <div class="logo_items">
+          <img src="assets/BG1.png" alt="" />
+        </div>
+        <div  class="logo_items">
+          <img src="assets/BG1.png" alt="" />
+        </div>
+      </div>
+      <div class="logos">
+        <div class="logo_items">
+          <img src="assets/BG2.png" alt="" />
+        </div>
+        <div class="logo_items">
+          <img src="assets/BG2.png" alt="" />
+        </div>
+      </div>
+      <div class="logos">
+        <div class="logo_items">
+          <img src="assets/BG3.png" alt="" />
+        </div>
+        <div class="logo_items">
+          <img src="assets/BG3.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div id="left">
+            <div id="logo">
+              <img
+                id="inductId"
+                src="assets\induct-removebg-preview 1.png"
+                alt="logo"/>
+            </div>
+          </div>
+          <div id="right">
+                <nav>
+                    <div class="nav-bar">
+                        <ul id="sidemenu">
+                            <li><i class="fa-regular fa-user"></i><a href="#header">Team</a></li>
+                            <li><i class="fa-regular fa-circle"></i> <a href="#about">Startup Login</a></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i></i><a href="#skills">Investor Login</a></li>
+                            <li><i class="fa-solid fa-gift"></i><a href="#project">Ecosystem Partner</a></li>
+                            <i class="fa-solid fa-xmark" onclick="closem()"></i>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="openm()"></i>
+                </nav>
+          </div>
+        </nav>
+        <main>
+          <div class="cont" id="home-up">
+            <div class="para left" id="para1">
+                <p>Bringing Your <br> Dream Into <span>Reality</span></p>
+            </div>
+            <div class="para right" id="para2">
+                <p>Transforming the way you invest, thrive <br> globally with our innovative asset<br> management solutions</p>
+            </div>
+          </div>
+          <div id="home-down">
+            <div class="box" id="box1">
+                <div class="info1">
+                <p><span class="main">InDuckt</span></p>
+                <p><span class="vision">Vision</span> <span class="fund">Fund</span></p>
+                <p><a href="#">induct.co.in</a>  <i class="fa-solid fa-arrow-up"></i></p></div>
+            </div>
+            <div class="box" id="box2">
+                <div class="info2">
+                    <p><span class="main">InDuckt Traction</span></p>
+                    <p><span class="vision">Angel Investors</span></p>
+                    <p><a href="#">induct.co.in</a>  <i class="fa-solid fa-arrow-up"></i></p>
+                </div>
+            </div>
+            <div class="box" id="box3">
+                <div class="info3">
+                    <p><span class="main">InGrow</span></p>
+                    <p><span class="vision">Accelerator</span></p>
+                    <p><a href="#">induct.co.in</a>  <i class="fa-solid fa-arrow-up"></i></p>
+                </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script>
+        var side = document.getElementById("sidemenu");
+        function openm(){
+            side.style.right = "0";
+        }
+        function closem(){
+            side.style.right = "-500px";
+        }
+    </script>
+  </body>
+</html>
