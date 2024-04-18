@@ -41,72 +41,115 @@
 
     <div id="header">
       <div class="container">
-        <nav>
+        <nav id="old">
           <div id="left">
             <div id="logo">
               <img
                 id="inductId"
                 src="assets\induct-removebg-preview 1.png"
-                alt="logo"/>
+                alt="logo"
+              />
             </div>
           </div>
           <div id="right">
-                <nav>
-                    <div class="nav-bar">
-                        <ul id="sidemenu">
-                            <li><i class="fa-regular fa-user"></i><a href="#header">Team</a></li>
-                            <li><i class="fa-regular fa-circle"></i> <a href="#about">Startup Login</a></li>
-                            <li><i class="fa-solid fa-bag-shopping"></i></i><a href="#skills">Investor Login</a></li>
-                            <li><i class="fa-solid fa-gift"></i><a href="#project">Ecosystem Partner</a></li>
-                            <i class="fa-solid fa-xmark" onclick="closem()"></i>
-                        </ul>
-                    </div>
-                    <i class="fa-solid fa-bars" onclick="openm()"></i>
-                </nav>
+            <nav id="new">
+              <div class="nav-bar">
+                <ul id="sidemenu">
+                  <li>
+                    <img src="assets/peoplepng.png" alt="" /><a href="#header"
+                      >Team</a
+                    >
+                  </li>
+                  <li>
+                    <img src="assets/ecosystem.png" alt="" /><a href="#about"
+                      >Startup Login</a
+                    >
+                  </li>
+                  <li>
+                    <img src="assets/investor.png" alt="" /><a href="#skills"
+                      >Investor Login</a
+                    >
+                  </li>
+                  <li>
+                    <img src="assets/startup.png" alt="" /><a href="#project"
+                      >Ecosystem Partner</a
+                    >
+                  </li>
+                  <i class="fa-solid fa-xmark" onclick="closem()"></i>
+                </ul>
+                <div
+                class="">
+                  <i id="bars" class="fa-solid fa-bars" onclick="openm()"></i>
+                </div>
+              </div>
+            </nav>
           </div>
         </nav>
         <main>
           <div class="cont" id="home-up">
             <div class="para left" id="para1">
-                <p>Bringing Your <br> Dream Into <span>Reality</span></p>
+              <p>
+                Bringing Your <br />
+                Dream Into <span>Reality</span>
+              </p>
             </div>
             <div class="para right" id="para2">
-                <p>Transforming the way you invest, thrive <br> globally with our innovative asset<br> management solutions</p>
+              <p>
+                Transforming the way you invest, thrive <br />
+                globally with our innovative asset<br />
+                management solutions
+              </p>
             </div>
           </div>
           <div id="home-down">
             <div class="box" id="box1">
-                <div class="info1">
+              <div class="small-box1"></div>
+              <div class="info1">
                 <p><span class="main">InDuckt</span></p>
-                <p><span class="vision">Vision</span> <span class="fund">Fund</span></p>
-                <p><a href="#">induct.co.in</a>  <i class="fa-solid fa-arrow-up"></i></p></div>
+                <p>
+                  <span class="vision">Vision</span>
+                  <span class="fund">Fund</span>
+                </p>
+                <p>
+                  <a href="#">induct.co.in</a>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </p>
+              </div>
             </div>
             <div class="box" id="box2">
-                <div class="info2">
-                    <p><span class="main">InDuckt Traction</span></p>
-                    <p><span class="vision">Angel Investors</span></p>
-                    <p><a href="#">induct.co.in</a>  <i class="fa-solid fa-arrow-up"></i></p>
-                </div>
+              <div class="small-box2"></div>
+              <div class="info2">
+                <p><span class="main">InDuckt Traction</span></p>
+                <p><span class="vision">Angel Investors</span></p>
+                <p>
+                  <a href="#">induct.co.in</a>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </p>
+              </div>
             </div>
             <div class="box" id="box3">
-                <div class="info3">
-                    <p><span class="main">InGrow</span></p>
-                    <p><span class="vision">Accelerator</span></p>
-                    <p><a href="#">induct.co.in</a>  <i class="fa-solid fa-arrow-up"></i></p>
-                </div>
+              <div class="small-box3"></div>
+              <div class="info3">
+                <p><span class="main">InGrow</span></p>
+                <p><span class="vision">Accelerator</span></p>
+                <p>
+                  <a href="#">induct.co.in</a>
+                  <i class="fa-solid fa-arrow-up"></i>
+                </p>
+              </div>
             </div>
           </div>
         </main>
       </div>
     </div>
     <script>
-        var side = document.getElementById("sidemenu");
-        function openm(){
-            side.style.right = "0";
-        }
-        function closem(){
-            side.style.right = "-500px";
-        }
+      var side = document.getElementById("sidemenu");
+      function openm() {
+        side.style.right = "0";
+      }
+      function closem() {
+        side.style.right = "-500px";
+      }
     </script>
   </body>
 </html>
