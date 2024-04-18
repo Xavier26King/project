@@ -7,7 +7,7 @@
 body {
   background-color: #e5190b;
   height: 1117px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .container {
@@ -234,39 +234,61 @@ main {
   background-repeat: no-repeat;
 }
 
-nav .fa-solid{
+nav .fa-solid {
   display: block;
-  position: relative;
+  position: fixed;
   color: white;
   font-size: 20px;
-  left: 1750px;
-  bottom: 90px;
+  right: 20px;
+  top: 20px;
+  /* cursor: pointer; */
+  z-index: 999;
 }
-nav ul{
+
+.menu{
+  cursor: pointer;  
+}
+
+nav ul {
   background: white;
   position: fixed;
   top: 80px;
-  right: -200px;
-  width: 250px;
-  height: 250px;
+  right: -500px;
+  width: 363px;
+  height: 411px;
   padding-top: 50px;
-  z-index: 2;
+  z-index: 998;
   transition: right 0.5s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-nav ul li{
-  display: block;
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 24px;
   margin: 25px;
 }
+
 nav ul li a {
   text-decoration: none;
+  color: black;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.01em;
+  text-align: left;
 }
+
 nav ul .fa-solid.fa-xmark {
   position: absolute;
   color: black;
-  top: 25px;
-  left: 30px;
+  top: 20px;
+  left: 20px;
   cursor: pointer;
 }
+
 nav ul .fa-solid {
-  color: red;
+  color: white;
 }
